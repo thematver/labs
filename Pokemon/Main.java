@@ -21,6 +21,9 @@ b.addAlly(p3);
 b.addAlly(p4);
 b.addFoe(p5);
 b.addFoe(p6);
+b.addFoe(p7);
+b.go();
 
 }
 }
+
