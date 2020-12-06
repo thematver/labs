@@ -1,7 +1,8 @@
-package digital.anomatver.lab3.scene.persons;
+package lab4.persons;
 
-import digital.anomatver.lab3.scene.SceneObject;
-import digital.anomatver.lab3.scene.items.*;
+import lab4.SceneObject;
+import lab4.items.Item;
+import lab4.items.Sittable;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -50,7 +51,7 @@ public abstract class Person extends SceneObject {
     }
     public void sitDown(Sittable item) {
         item.setSitter(this);
-        System.out.println(this.getName() + " сел на " + ((Item) item).getName());
+        System.out.println(this.getName() + " сел на " + item.getName());
     }
 
     public void standUp(Sittable item) {

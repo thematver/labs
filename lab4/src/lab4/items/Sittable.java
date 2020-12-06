@@ -1,10 +1,10 @@
-package digital.anomatver.lab3.scene.items;
+package lab4.items;
 
-import digital.anomatver.lab3.scene.persons.Person;
+import lab4.persons.*;
 
 public interface Sittable {
 
     public void setSitter(Person sitter);
     public Person getSitter();
-
+    public String getName();
 }

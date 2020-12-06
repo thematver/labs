@@ -1,6 +1,6 @@
-package digital.anomatver.lab3.scene.items;
+package lab4.items;
 
-import digital.anomatver.lab3.scene.SceneObject;
+import lab4.SceneObject;
 
 public abstract class Item extends SceneObject {
 

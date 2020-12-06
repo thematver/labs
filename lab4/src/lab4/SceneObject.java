@@ -1,4 +1,4 @@
-package digital.anomatver.lab3.scene;
+package lab4;
 
 
 import java.util.Objects;

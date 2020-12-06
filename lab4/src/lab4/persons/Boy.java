@@ -1,8 +1,7 @@
-package digital.anomatver.lab3.scene.persons;
+package lab4.persons;
 
-import digital.anomatver.lab3.scene.items.Item;
-
-import digital.anomatver.lab3.scene.items.Tubule;
+import lab4.exceptions.SelfHarmException;
+import lab4.items.*;
 
 public class Boy  extends Person {
 
@@ -13,6 +12,10 @@ public class Boy  extends Person {
 
     public void shoot(Tubule tubule, Person person) {
         for (Item peas:  tubule.getItems()) {
+
+            if (person.equals(this)) {
+                throw new SelfHarmException();
+            }
             System.out.println(getName()+" стреляет в "+person.getName() + " с помощью "+peas.getName());
             person.setEmotion(Emotion.PAIN);
         }

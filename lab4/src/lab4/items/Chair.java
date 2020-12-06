@@ -1,6 +1,6 @@
-package digital.anomatver.lab3.scene.items;
+package lab4.items;
 
-import digital.anomatver.lab3.scene.persons.Person;
+import lab4.persons.Person;
 
 public class Chair  extends Item implements Sittable  {
 
